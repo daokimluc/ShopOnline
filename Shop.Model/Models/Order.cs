@@ -39,7 +39,7 @@ namespace Shop.Model.Models
         public string PaymentStatus { set; get; }
         public bool Status { set; get; }
 
-        public virtual IEnumerable<OrderDetail> OrderDetails { set;  get}
+        public virtual IEnumerable<OrderDetail> OrderDetails { set; get;  }
 
     }
 }

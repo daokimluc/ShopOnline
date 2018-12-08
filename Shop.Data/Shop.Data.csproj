@@ -50,7 +50,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Infastructure\DbFactory.cs" />
+    <Compile Include="Infastructure\Disposable.cs" />
+    <Compile Include="Infastructure\IDbFactory.cs" />
+    <Compile Include="Infastructure\IRepository.cs" />
+    <Compile Include="Infastructure\IUnitOfWork.cs" />
+    <Compile Include="Infastructure\RepositoryBase.cs" />
+    <Compile Include="Infastructure\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -61,6 +69,13 @@
       <Project>{95cdaaa7-889a-4582-8cb6-cbdb1f9ba5dc}</Project>
       <Name>Shop.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Shop.Model\Shop.Model.csproj">
+      <Project>{9a7d25a3-dabb-4d96-8c5e-65b49dcbb9c9}</Project>
+      <Name>Shop.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

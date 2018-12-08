@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Shop.Model.Models
 {
     [Table("VisitorStatistics")]
-    class VisitorStatistic
+    public class VisitorStatistic
     {
         [Key]
         public Guid ID { set; get; }
